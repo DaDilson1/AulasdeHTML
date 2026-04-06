@@ -134,10 +134,7 @@ body {
 
 @media (max-width: 768px) {
   #myTopnav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 60px;
+    display: none;   
   }
 
   .topnav #hamburger {
@@ -164,9 +161,8 @@ body {
   }
 
   .topnav #myLinks .active {
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     align-items: center;
-    font-size: 5px;
   }
 }
