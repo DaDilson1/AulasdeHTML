@@ -1,5 +1,4 @@
-@import url('https://googleapis.com');
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 :root {
   --primary-color: #000080;
@@ -26,7 +25,7 @@
 }
 
 body {
-  font-family: 'Monoton', cursive;
+  font-family: 'Libre Baskerville', serif;
   font-size: 10px;
 
 }
@@ -135,7 +134,10 @@ body {
 
 @media (max-width: 768px) {
   #myTopnav {
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 60px;
   }
 
   .topnav #hamburger {
@@ -165,5 +167,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 5px;
   }
 }
