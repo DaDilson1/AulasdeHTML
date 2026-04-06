@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site - Login</title>
+    <link rel="stylesheet" href="assets/css/auth.css" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <section class="card">
+            <h2>Cadastrar</h2>
+            <form id="loginForm" novalidade>
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Digite o seu nome" required />
+                    <div class="error-message" id="nameError">Por favor, insira um nome válido.</div>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Sobrenome:</label>
+                    <input type="text" id="surname" name="surname" placeholder="Digite o seu sobrenome" required />
+                    <div class="error-message" id="surnameError">Por favor, insira um sobrenome válido.</div>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Sexo:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Selecione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Prefiro não responder">Prefiro não responder</option>
+                    </select>
+                    <div class="error-message" id="genderError">Por favor, selecione um sexo.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="sousadady@gmail.com" required />
+                    <div class="error-message" id="emailError">Por favor, insira um email válido.</div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" placeholder="Digite a sua senha" required />
+                    <div class="error-message" id="passwordError">A sua senha deve ter pelo menos 6 caracteres.</div>
+                </div>
+                <div class="form-group">
+                    <a href="login.html">Voltar ao login</a>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+    </div>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

@@ -15,7 +15,7 @@
   --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   --linear-gradient: linear-gradient(45deg, #000080, #005227, #831D1C);
-  --border-radius: 20px;
+  --border-radius: 10px;
 }
 
 body{
@@ -65,10 +65,30 @@ body{
     margin-bottom: 0.5rem;
 }
 
+#gender{
+    color: var(--text-color);
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid var(--dark);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    box-sizing: border-box;
+}
+
+#gender option{
+    color: var(--primary-color);
+    font-size: 1rem;
+    background-color: var(--background-container);
+}
+
 .form-group input{
     padding: 0.5rem;
     border: 1px solid var(--dark);
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     font-size: 1rem;
     width: 100%;
     margin-bottom: 0.5rem;
@@ -90,7 +110,7 @@ button{
     width: 100%;
     padding: 0.7rem;
     border: 1px solid var(--dark);
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     background-color: var(--secondy-color);
     text-align: center;
     color: var(--light);
