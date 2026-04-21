@@ -37,9 +37,9 @@ body {
   padding: 20px;
 }
 
-.container{
-    width: 100%;
-    height: 100%;
+.about-container{
+    width: 50%;
+    height: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,8 +73,9 @@ body {
 .about-content{
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;;
 }
 
 .about-content h2{
@@ -90,31 +91,53 @@ body {
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 20px;
-    text-align: left;
     width: 100%;
+}
+
+.my-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .my-photo a{
     flex-direction: column;
     color: var(--primary-color);
-    font-size: 28px;
+    font-size: 15px;
     position: relative;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     right: 10px;
     text-decoration: none;
 }
 
+.my-photo h2{
+    flex-direction: column;
+    color: var(--primary-color);
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-photo h2:hover{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
 .my-photo a:hover{
-    color: var(--quaternary-color);;
+    color: var(--primary-color);
+    font-size: 28px;
 }
 
 .card-profile{
     width: 300px;
     height: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px;
     background-color: var(--background-container);
@@ -124,9 +147,9 @@ body {
 }
 
 .card-profile img{
-    margin-bottom: 20px;
-    width: 150px;
-    height: auto;
+    margin-bottom: 5px;
+    width: 175px;
+    height: 175px;
     border-radius: var(--border-radius-circle);
     border: 2px solid var(--terceary-color);
     box-shadow: var(--box-shadow);
@@ -135,6 +158,16 @@ body {
 
 .about-meet-me img:hover{
     transform: scale(1.1);
+}
+
+.about-meet-me{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .about-meet-me h2{
