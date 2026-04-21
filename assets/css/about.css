@@ -156,10 +156,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-.about-meet-me img:hover{
-    transform: scale(1.1);
-}
-
 .about-meet-me{
     width: 100%;
     display: flex;
@@ -211,12 +207,27 @@ body {
         height: 200px;
     }
     .card-profile img{
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
+        margin-left: 15px;
     }
     .about-meet-me{
-        width: 100%;
+        width: 100% !important;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        text-align: center;
+        flex-direction: column;
     }
+    .about-meet-me h2{
+        margin-top: 5px;
+        text-align: center;
+        font-size: 15px;
+        color: var(--text-color);
+        margin-bottom: 5px;
+        font-style: italic;
+        margin-left: 15px;
+    }
+    
     .my-links{
         width: 100%;
     }
