@@ -195,3 +195,29 @@ body {
 .my-links a:hover{
     color: var(--quaternary-color);
 }
+
+@media (max-width: 768px) {
+    .about-container{
+        width: 100%;
+    }
+    .about-content{
+        width: 100%;
+    }
+    .my-photo{
+        width: 100%;
+    }
+    .card-profile{
+        width: 200px;
+        height: 200px;
+    }
+    .card-profile img{
+        width: 150px;
+        height: 150px;
+    }
+    .about-meet-me{
+        width: 100%;
+    }
+    .my-links{
+        width: 100%;
+    }
+}
