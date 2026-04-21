@@ -121,6 +121,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 15px;
 }
 
 .my-photo h2:hover{
@@ -154,6 +155,7 @@ body {
     border: 2px solid var(--terceary-color);
     box-shadow: var(--box-shadow);
     transition: transform 0.3s ease;
+    margin-left: 15px;
 }
 
 .about-meet-me{
@@ -173,6 +175,7 @@ body {
     color: var(--text-color);
     margin-bottom: 15px;
     font-style: italic;
+    margin-left: 15px;
 }
 
 .my-links{
