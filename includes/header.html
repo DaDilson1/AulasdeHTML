@@ -3,8 +3,10 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../assets/css/includes.css">
+  <link rel="stylesheet" href="../assets/css/menu.css">
 </head>
 
 <body>
@@ -15,26 +17,31 @@
     <!-- Top Navigation Menu -->
     <div class="topnav">
       <a href="index.html"><img src="assets/img/logo.png" alt="Logo do site"></a>
-      <div id="myTopnav">
-        <a href="login.html">Login</a>
-        <a href="about.html">Sobre</a>
-      </div>
+      
 
-      <div id="myLinks">
+      <!-- Side menu -->
+      <div id="sideMenu" class="side-menu">
+        <a href="javascript:void(0);"class="closebtn" onclick="closeMenu()">&times;</a>
         <a href="index.html#html">HTML</a>
         <a href="index.html#css">CSS</a>
         <a href="index.html#js">JS</a>
         <a href="login.html">Login</a>
       </div>
 
-      <!-- Hamburger Icon -->
-      <div id="hamburger">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i></a>
+      <!-- menuToggle -->
+      <div class="sidebar">
+        <button class="menu-toggle">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div id="myTopnav" class="desktop-menu">
+        <a href="login.html">Login</a>
+        <a href="about.html">Sobre</a>
+      </div>
+      </div>
       </div>
     </div>
-  </div>
-  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/includes.js"></script>
+  <script src="../assets/js/menu.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #000080;
+  --secondy-color: #005227;
+  --terceary-color: #831D1C;
+  --quaternary-color: #ffd700;
+  --transparent-color: rgba(255, 255, 255, 0);
+  --blur-color: rgba(0, 0, 0, 0.5);
+  --text-color: #000000;
+  --light: #ffffff;
+  --dark: #000000;
+  --background-container: #F5F5F5;
+  --background-image: url('../img/Background.png');
+  --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --linear-gradient: linear-gradient(45deg, #000080, #005227, #831D1C);
+  --border-radius: 20px;
+}
+
+.side-menu{
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--background-container);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: var(--box-shadow);
+}
+
+.side-menu a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--text-color);
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover{
+    color: var(--quaternary-color);
+}
+
+.side-menu .closebtn{
+    font-size: 36px;
+    margin-left: 15px;
+}
+
+.menu-toggle{
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 10px;
+    color: var(--text-color);
+}
+
+@media (min-width: 769px) {
+    .side-menu{
+        display: none;
+    }
+    .menu-toggle{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop-menu{
+        display: none;
+    }
+}
