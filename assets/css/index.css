@@ -53,7 +53,49 @@ body{
     box-shadow: var(--box-shadow);
 }
 
-h1{
+#html, #css, #js h2{
+    color: var(--secondy-color);
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+}
+
+#html, #css, #js p{
+    text-align: center !important;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+#html, #css, #js img{
+    margin-bottom: 20px;
+    width: 150px;
+    height: auto;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--terceary-color);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+}
+
+#html, #css, #js img:hover{
+    transform: scale(1.1);
+}
+
+#html, #css, #js a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#html, #css, #js a:hover{
+    color: var(--quaternary-color);
+}
+
+#html, #css, #js h1{
     color: var(--primary-color);
     font-size: 36px;
     margin-bottom: 10px;
