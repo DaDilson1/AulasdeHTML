@@ -356,6 +356,22 @@ main{
         width: 100%;
     }
 
+    #html {
+        width: 100%;
+    }
+
+    #html p {
+        font-size: 14px;
+    }
+
+    #css {
+        width: 100%;
+    }
+
+    #css p {
+        font-size: 14px;
+    }
+
     #passos {
         width: 100%;
     }
