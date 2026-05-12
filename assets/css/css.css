@@ -134,3 +134,39 @@ main{
 #css-utility-container::-webkit-scrollbar{
     height: 8px;
 }
+
+@media (max-width: 768px) {
+    .css-container {
+        width: 100%;
+    }
+
+    #css-utility-container {
+        flex-direction: column;
+    }
+
+    #css-utility-container h2 {
+        font-size: 20px;
+    }
+
+    #css-utility-container p {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+    
+    #css-utility-container::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    #css-utility-container::-webkit-scrollbar-thumb {
+        background-color: var(--primary-color);
+        border-radius: var(--border-radius);
+    }
+}

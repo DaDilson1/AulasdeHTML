@@ -136,3 +136,39 @@ main {
 #html-utility-container::-webkit-scrollbar {
     height: 8px;
 }
+
+@media (max-width: 768px) {
+    #html {
+        width: 100%;
+    }
+
+    #html-utility-container {
+        flex-direction: column;
+    }
+
+    #html-utility-container h2 {
+        font-size: 24px;
+    }
+
+    #html-utility-container p {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    #html-utility-container::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    #html-utility-container::-webkit-scrollbar-thumb {
+        background-color: var(--terceary-color);
+        border-radius: var(--border-radius);
+    }
+}
