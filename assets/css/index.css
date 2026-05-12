@@ -1,7 +1,7 @@
 @import url('https://googleapis.com');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
-:root{
+:root {
     --primary-color: #000080;
     --secondy-color: #005227;
     --terceary-color: #831D1C;
@@ -13,22 +13,21 @@
     --dark: #000000;
     --border-radius: 20px;
     --background-container: #F5F5F5;
-    --background-image: url('../img/Background.png');
     --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     --linear-gradient: linear-gradient(45deg, #000080, #005227, #831D1C);
-    
+
 }
-*{
+
+* {
     margin: 0;
     padding: 5px;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Monoton', cursive;
+body {
+    font-family: 'Libre Baskerville', serif;
     font-size: 10px;
-    background-image: var(--background-image);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -38,8 +37,26 @@ body{
     padding: 20px;
 }
 
-.container{
+main{
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--light);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+.container {
+    width: 75%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -49,28 +66,33 @@ body{
     padding: 20px;
     border-radius: var(--border-radius);
     max-width: 100%;
-    margin: 20px auto;
     box-shadow: var(--box-shadow);
+    overflow-x: auto;
 }
 
-#html, #css, #js h2{
-    color: var(--secondy-color);
-    font-size: 28px;
-    margin-bottom: 10px;
+
+#html {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--box-shadow);
+    border-radius: var(--border-radius);
     text-align: center;
-    text-shadow: var(--text-shadow);
 }
 
-#html, #css, #js p{
+#html p {
     text-align: center !important;
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 20px;
-    text-align: left;
     width: 100%;
 }
 
-#html, #css, #js img{
+#html img {
     margin-bottom: 20px;
     width: 150px;
     height: auto;
@@ -80,22 +102,22 @@ body{
     transition: transform 0.3s ease;
 }
 
-#html, #css, #js img:hover{
+#html img:hover {
     transform: scale(1.1);
 }
 
-#html, #css, #js a{
+#html a {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
 }
 
-#html, #css, #js a:hover{
+#html a:hover {
     color: var(--quaternary-color);
 }
 
-#html, #css, #js h1{
+#html h1 {
     color: var(--primary-color);
     font-size: 36px;
     margin-bottom: 10px;
@@ -103,40 +125,36 @@ body{
     text-shadow: var(--text-shadow);
 }
 
-h2{
+#html h2 {
     color: var(--secondy-color);
-    font-size: 28px;
-    margin-bottom: 10px;
-    text-align: center;
     text-shadow: var(--text-shadow);
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-p{
+#css {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--box-shadow);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+#css p {
     text-align: center !important;
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 20px;
-    text-align: left;
     width: 100%;
 }
 
-.Logo{
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    align-items: center;
-    
-}
-
-.Logo h2{
-    text-align: center;
-    font-size: 20px;
-    color: var(--text-color);
-    margin-bottom: 15px;
-    font-style: italic;
-}
-
-.Logo img{
+#css img {
     margin-bottom: 20px;
     width: 150px;
     height: auto;
@@ -146,11 +164,103 @@ p{
     transition: transform 0.3s ease;
 }
 
-.Logo img:hover{
+#css img:hover {
     transform: scale(1.1);
 }
 
-#passos{
+#css a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#css a:hover {
+    color: var(--quaternary-color);
+}
+
+#css h1 {
+    color: var(--primary-color);
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+}
+
+#css h2 {
+    color: var(--secondy-color);
+    text-shadow: var(--text-shadow);
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#js {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--box-shadow);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+#js p {
+    text-align: center !important;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#js img {
+    margin-bottom: 20px;
+    width: 150px;
+    height: auto;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--terceary-color);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+}
+
+#js img:hover {
+    transform: scale(1.1);
+}
+
+#js a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#js a:hover {
+    color: var(--quaternary-color);
+}
+
+#js h1 {
+    color: var(--primary-color);
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+}
+
+#js h2 {
+    color: var(--secondy-color);
+    text-shadow: var(--text-shadow);
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#passos {
+    text-align: center !important;
+    width: 75%;
+    height: 100%;
     margin-top: 20px;
     margin-bottom: 40px;
     padding: 20px;
@@ -159,23 +269,40 @@ p{
     box-shadow: var(--box-shadow);
 }
 
-#passos h2{
-    text-align: left;
-    Color: var(--primary-color);
+#passos h2 {
+    color: var(--primary-color);
     font-size: 28px;
     margin-bottom: 20px;
 }
 
-#passos ol{
-    font-style: italic;
+#passos li {
+    display: inline-block;
+    text-align: left;
+    color: var(--text-color);
     font-size: 18px;
-}
-
-#passos li{
     margin-bottom: 5px;
 }
 
-#social-media a{
+#passos li:hover {
+    color: var(--quaternary-color);
+}
+
+#passos a {
+    text-align: center;
+    text-align: left;
+    color: var(--text-color);
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    margin-right: 20px !important;
+    transition: color 0.3s ease;
+}
+
+#passos a:hover {
+    color: var(--quaternary-color);
+}
+
+#social-media a {
     flex-direction: column;
     color: var(--primary-color);
     font-size: 28px;
@@ -184,15 +311,17 @@ p{
     justify-content: right;
     align-items: center;
     right: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-#social-media a:hover{
+#social-media a:hover {
     color: var(--quaternary-color);
 }
 
-#social-media{
+#social-media {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -206,7 +335,7 @@ p{
     margin-bottom: 20px;
 }
 
-.audio button{
+.audio button {
     background-color: var(--secondy-color);
     color: var(--light);
     border: 2px solid var(--dark);
@@ -217,7 +346,38 @@ p{
     transition: transform 0.3s ease;
 }
 
-.audio button:hover{
+.audio button:hover {
     background-color: var(--quaternary-color);
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    #passos {
+        width: 75%;
+    }
+
+    #passos h2 {
+        text-align: center;
+    }
+
+    #passos li {
+        display: block;
+        text-align: center;
+    }
+
+    #passos a {
+        text-align: center;
+    }
+
+    #social-media {
+        justify-content: center;
+    }
+
+    .audio {
+        justify-content: center;
+    }
 }

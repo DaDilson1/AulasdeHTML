@@ -10,7 +10,6 @@
   --light: #ffffff;
   --dark: #000000;
   --background-container: #F5F5F5;
-  --background-image: url('../img/Background.png');
   --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   --linear-gradient: linear-gradient(45deg, #000080, #005227, #831D1C);

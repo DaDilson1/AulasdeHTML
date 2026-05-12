@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content=width=device-width, initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Index - linguagens-web</title>
@@ -13,18 +13,24 @@
 <body>
     <!-- Incluindo o header -->
     <div id="header-top"></div>
-
-    <!-- O conteúdo principal da página -->
-    <div class="container">
-        <div id="html">
-            <h2>O que é HTML?</h2>
-            <p>HTML significa "HyperText Markup Language", É a estrutura fundamental de uma página web,
-                permitindo que organizemos texto, imagens e outros conteúdos.</p>
-            <div class="Logo">
-                <h2>Logo HTML</h2>
-                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
-                    <img src="assets/img/Logo-HTML.png" alt="Logotipo de HTML" />
-                </a>
+    <main>
+        <!-- O conteúdo principal da página -->
+        <div class="container">
+            <div id="html">
+                <h2>O que é HTML?</h2>
+                <p>HTML significa "HyperText Markup Language", É a estrutura fundamental de uma página web,
+                    permitindo que organizemos texto, imagens e outros conteúdos.</p>
+                <div class="Logo">
+                    <h2>Logo HTML</h2>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+                        <img src="assets/img/Logo-HTML.png" alt="Logotipo de HTML" />
+                    </a>
+                    <a href="html.html" target="_blank">
+                        <button><i class="fa fa-arrow-right"></i>
+                            <p>Mais sobre HTML</p>
+                        </button>
+                    </a>
+                </div>
             </div>
             <div id="css">
                 <h2>O que é CSS?</h2>
@@ -41,45 +47,62 @@
                     <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
                         <img src="assets/img/Logo-CSS.png" alt="Logotipo de CSS" />
                     </a>
+                    <a href="css.html" target="_blank">
+                        <button><i class="fa fa-arrow-right"></i>
+                            <p>Mais sobre CSS</p>
+                        </button>
+                    </a>
                 </div>
-                <div id="js">
-                    <h2>O que é JS?</h2>
-                    <p>JavaScript é uma linguagem de programação usada principalmente para deixar as páginas WEB
-                        interativas.</p>
-                    <p>Com javaScript, você pode criar efeitos dinâmicos, responder a ação do usuário (como clicks em
-                        botões), validar formulários, carregar conte+udos sem precisar atualizar a página, enter muitas
-                        outras coisas.</p>
-                </div>
+            </div>
+            <div id="js">
+                <h2>O que é JS?</h2>
+                <p>JavaScript é uma linguagem de programação usada principalmente para deixar as páginas WEB
+                    interativas.</p>
+                <p>Com javaScript, você pode criar efeitos dinâmicos, responder a ação do usuário (como clicks em
+                    botões), validar formulários, carregar conte+udos sem precisar atualizar a página, enter muitas
+                    outras coisas.
+                </p>
                 <div class="Logo">
                     <h2>Logo JS</h2>
                     <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
                         <img src="assets/img/Logo-JS.png" alt="Logotipo de JS" />
                     </a>
-                </div>
-
-                <section id="passos">
-                    <h2> Passos para aprender web</h2>
-                    <ol>
-                        <li>Estudar HTML</li>
-                        <li>Aprender CSS</li>
-                        <li>Praticar JavaScript</li>
-                    </ol>
-                </section>
-                <section id="social-media">
-                    <a href="https://www.facebook.com/SeuPerfil" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.twitter.com/SeuPerfil" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/SeuPerfil" target="_blank"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/SeuPerfil" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </section>
-                <div class="audio">
-                    <button onclick="Audio()"><i class="fa fa-volume-up"></i> Não clicar neste BOTÃO </button>
-                    <audio id="myAudio" src="assets/audio/chicken-on-tree-screaming.mp3"></audio>
+                    <a href="js.html" target="_blank">
+                        <button><i class="fa fa-arrow-right"></i>
+                            <p>Mais sobre JS</p>
+                        </button>
+                    </a>
                 </div>
             </div>
+
+            <section id="passos">
+                <h2> Passos para aprender Linguagens-web</h2>
+                <a href="html.html" target="_blank">
+                    <li>Estudar HTML</li>
+                </a>
+                <a href="css.html" target="_blank">
+                    <li>Aprender CSS</li>
+                </a>
+                <a href="js.html" target="_blank">
+                    <li>Praticar JavaScript</li>
+                </a>
+            </section>
+            <section id="social-media">
+                <a href="https://www.facebook.com/SeuPerfil" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com/SeuPerfil" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/SeuPerfil" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/SeuPerfil" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </section>
+            <div class="audio">
+                <button onclick="Audio()"><i class="fa fa-volume-up"></i> Não clicar neste BOTÃO </button>
+                <audio id="myAudio" src="assets/audio/chicken-on-tree-screaming.mp3"></audio>
+            </div>
         </div>
-        <!-- Incluindo o footer -->
-        <div id="footer-under"></div>
-        <script src="assets/js/includes.js"></script>
+        </div>
+    </main>
+    <!-- Incluindo o footer -->
+    <div id="footer-under"></div>
+    <script src="assets/js/includes.js"></script>
 </body>
 
 </html>
