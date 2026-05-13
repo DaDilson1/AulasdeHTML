@@ -209,7 +209,6 @@ main{
 }
 
 #js p {
-    text-align: center !important;
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 20px;
@@ -371,6 +370,14 @@ main{
     #css p {
         font-size: 14px;
     }
+    #js {
+        width: 100%;
+    }
+
+    #js p {
+        font-size: 14px;
+    }
+
 
     #passos {
         width: 100%;
