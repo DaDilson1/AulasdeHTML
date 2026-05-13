@@ -133,6 +133,41 @@ main{
     text-align: center;
 }
 
+.more-info button {
+    background-color: var(--transparent-color);
+    color: var(--light);
+    border: 2px solid var(--dark);
+    border-radius: var(--border-radius);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.more-info button:hover {
+    background-color: var(--quaternary-color);
+    transform: scale(1.1);
+}
+
+.more-info a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+
+.more-info i{
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.more-info i:hover {
+    color: var(--secondy-color);
+}
+
 #css {
     width: 75%;
     height: 100%;
@@ -370,14 +405,7 @@ main{
     #css p {
         font-size: 14px;
     }
-    #js {
-        width: 100%;
-    }
-
-    #js p {
-        font-size: 14px;
-    }
-
+    
 
     #passos {
         width: 100%;
