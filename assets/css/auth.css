@@ -104,7 +104,7 @@ main {
 }
 
 .card h2 {
-    text-align: left;
+    text-align: center;
     color: var(--primary-color);
     font-size: 28px;
     margin-bottom: 2.5rem;
@@ -164,12 +164,18 @@ main {
 
 .form-group a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondy-color);
     font-size: 1rem;
 }
 
 .form-group a:hover {
+    color: var(--quaternary-color);
+}
+
+.form-group i {
     color: var(--secondy-color);
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
 }
 
 button {
@@ -250,6 +256,11 @@ button:hover {
         display: flex;
         flex-direction: column;
     }
+
+    .card h2 {
+        text-align: center;
+    }
+
     .form-info {
         display: none;
     }
