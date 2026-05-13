@@ -11,29 +11,39 @@
 </head>
 
 <body>
-    <div class="container">
-        <section class="card">
-            <h2>Login</h2>
-            <form id="loginForm" novalidade>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="sousadady@gmail.com" required />
-                    <div class="error-message" id="emailError">Por favor, insira um email válido.</div>
-                </div>
-                <div class="form-group">
-                    <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password" placeholder="Digite a sua senha" required />
-                    <div class="error-message" id="passwordError">A sua senha deve ter pelo menos 6 caracteres.</div>
-                </div>
-                <div class="form-group">
-                <a href="cadastro.html">Cadastrar</a>
-                </div>
-                <button type="submit">Entrar</button>
-            </form>
-        </section>
-    </div>
-    <script src="assets/js/auth.js"></script>
-
+    <main>
+        <div class="container">
+            <section class="card">
+                <h2>Login</h2>
+                <form id="loginForm" novalidade>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="sousadady@gmail.com" required />
+                        <div class="error-message" id="emailError">Por favor, insira um email válido.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" placeholder="Digite a sua senha"
+                            required />
+                        <div class="error-message" id="passwordError">A sua senha deve ter pelo menos 6 caracteres.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <a href="cadastro.html">Cadastrar</a>
+                    </div>
+                    <button type="submit">Entrar</button>
+                </form>
+            </section>
+            <section class="form-info">
+                <h2>Bem-vindo de volta!</h2>
+                <p>Faça login para acessar o conteúdo exclusivo sobre linguagens web e continue sua jornada de
+                    aprendizado.
+                </p>
+                <img src="assets/img/logo.png" alt="logo" />
+            </section>
+        </div>
+        <script src="assets/js/auth.js"></script>
+    </main>
 </body>
 
 </html>

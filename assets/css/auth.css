@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 :root {
-  --primary-color: #000080;
-  --secondy-color: #005227;
-  --terceary-color: #831D1C;
-  --quaternary-color: #ffd700;
-  --transparent-color: rgba(255, 255, 255, 0);
-  --blur-color: rgba(0, 0, 0, 0.5);
-  --text-color: #000000;
-  --light: #ffffff;
-  --dark: #000000;
-  --background-container: #F5F5F5;
-  --background-image: url('../img/Fundo.png');
-  --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  --linear-gradient: linear-gradient(45deg, #000080, #005227, #831D1C);
-  --border-radius: 10px;
+    --primary-color: #000080;
+    --secondy-color: #005227;
+    --terceary-color: #831D1C;
+    --quaternary-color: #ffd700;
+    --transparent-color: rgba(255, 255, 255, 0);
+    --blur-color: rgba(0, 0, 0, 0.5);
+    --text-color: #000000;
+    --light: #ffffff;
+    --dark: #000000;
+    --background-container: #F5F5F5;
+    --background-image: url('../img/Fundo.png');
+    --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    --linear-gradient: linear-gradient(45deg, #000080, #005227, #831D1C);
+    --border-radius: 10px;
 }
 
-body{
+body {
     font-family: 'Libre Baskerville', serif;
     background-image: var(--background-image);
     background-position: center;
@@ -33,8 +33,52 @@ body{
     margin: 0;
 }
 
-.container{
+main {
+    width: 75%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.container {
     background-color: var(--background-container);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: 800px;
+    justify-content: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.container h1 {
+    text-align: left;
+    color: var(--primary-color);
+    font-size: 28px;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+}
+
+.card {
+    background-color: var(--background-container);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -44,7 +88,22 @@ body{
     margin-left: 20px;
 }
 
-.card h2{
+.card-login {
+    background-color: var(--background-container);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: 350px;
+    justify-content: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.card h2 {
     text-align: left;
     color: var(--primary-color);
     font-size: 28px;
@@ -52,20 +111,28 @@ body{
     font-weight: bold;
 }
 
-.form-group{
+.form-group {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 1.5rem;
+    box-sizing: border-box;
 }
 
-.form-group label{
-    width: 100%;
+.form-group label {
     font-weight: bold;
     margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
 }
 
-#gender{
+#gender {
     color: var(--text-color);
     font-size: 1rem;
     display: flex;
@@ -79,34 +146,33 @@ body{
     box-sizing: border-box;
 }
 
-#gender option{
+#gender option {
     color: var(--primary-color);
     font-size: 1rem;
     background-color: var(--background-container);
 }
 
-.form-group input{
+.form-group input {
     padding: 0.5rem;
     border: 1px solid var(--dark);
     border-radius: var(--border-radius);
     font-size: 1rem;
     width: 100%;
     margin-bottom: 0.5rem;
-    box-shadow: var(--box-shadow);
     box-sizing: border-box;
 }
 
-.form-group a{
+.form-group a {
     text-decoration: none;
     color: var(--primary-color);
     font-size: 1rem;
 }
 
-.form-group a:hover{
+.form-group a:hover {
     color: var(--secondy-color);
 }
 
-button{
+button {
     width: 100%;
     padding: 0.7rem;
     border: 1px solid var(--dark);
@@ -119,17 +185,88 @@ button{
     border: 1px solid var(--dark);
 }
 
-button:hover{
+button:hover {
     background-color: var(--primary-color);
     color: var(--light);
     border: 1px solid var(--dark);
 }
 
-.error-message{
+.error-message {
     color: var(--terceary-color);
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
     display: none;
 }
 
+.form-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: table-column-group;
+    background-image: url('../img/side.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    width: 50%;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
 
+.form-info img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-info h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 28px;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+}
+
+.form-info p {
+    text-align: center;
+    color: var(--light);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-info {
+        display: none;
+    }
+
+    .card {
+        width: auto;
+        height: auto;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .container {
+        width: auto;
+        height: auto;
+        margin-right: -10px;
+        margin-left: -10px;
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+}

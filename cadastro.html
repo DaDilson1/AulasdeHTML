@@ -11,49 +11,54 @@
 </head>
 
 <body>
-    <div class="container">
-        <section class="card">
-            <h2>Cadastrar</h2>
-            <form id="loginForm" novalidade>
-                <div class="form-group">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" placeholder="Digite o seu nome" required />
-                    <div class="error-message" id="nameError">Por favor, insira um nome válido.</div>
-                </div>
-                <div class="form-group">
-                    <label for="surname">Sobrenome:</label>
-                    <input type="text" id="surname" name="surname" placeholder="Digite o seu sobrenome" required />
-                    <div class="error-message" id="surnameError">Por favor, insira um sobrenome válido.</div>
-                </div>
-                <div class="form-group">
-                    <label for="gender">Sexo:</label>
-                    <select id="gender" name="gender" required>
-                        <option value="">Selecione</option>
-                        <option value="Masculino">Masculino</option>
-                        <option value="Feminino">Feminino</option>
-                        <option value="Prefiro não responder">Prefiro não responder</option>
-                    </select>
-                    <div class="error-message" id="genderError">Por favor, selecione um sexo.</div>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="sousadady@gmail.com" required />
-                    <div class="error-message" id="emailError">Por favor, insira um email válido.</div>
-                </div>
-                <div class="form-group">
-                    <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password" placeholder="Digite a sua senha" required />
-                    <div class="error-message" id="passwordError">A sua senha deve ter pelo menos 6 caracteres.</div>
-                </div>
-                <div class="form-group">
-                    <a href="login.html">Voltar ao login</a>
-                </div>
-                <button type="submit">Entrar</button>
-            </form>
-        </section>
-    </div>
-    <script src="assets/js/auth.js"></script>
-
+    <main>
+        <div class="container">
+            <section class="card">
+                <h2>Cadastrar</h2>
+                <form id="loginForm" novalidade>
+                    <div class="form-group">
+                        <label for="name">Nome Completo:</label>
+                        <input type="text" id="name" name="name" placeholder="Ex: jose da silva " required />
+                        <div class="error-message" id="nameError">Por favor, insira um nome válido.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Sexo:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Selecione</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Prefiro não responder">Prefiro não responder</option>
+                        </select>
+                        <div class="error-message" id="genderError">Por favor, selecione um sexo.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Ex: teunome@gmail.com" required />
+                        <div class="error-message" id="emailError">Por favor, insira um email válido.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" placeholder="Digite a sua senha"
+                            required />
+                        <div class="error-message" id="passwordError">A sua senha deve ter pelo menos 6 caracteres.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <a href="login.html">Voltar ao login</a>
+                    </div>
+                    <button type="submit">Entrar</button>
+                </form>
+            </section>
+            <section class="form-info">
+                <h2>Bem-vindo de volta!</h2>
+                <p>Faça login para acessar o conteúdo exclusivo sobre linguagens web e continue sua jornada de
+                    aprendizado.
+                </p>
+                <img src="assets/img/logo.png" alt="logo" />
+            </section>
+        </div>
+        <script src="assets/js/auth.js"></script>
+    </main>
 </body>
 
 </html>
