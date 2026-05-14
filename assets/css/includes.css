@@ -151,6 +151,7 @@ body {
 }
 
 .footer-section h5 {
+  color: var(--secondy-color);
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: bold;
@@ -171,6 +172,7 @@ body {
 }
 
 .footer-newsletter h5 {
+  color: var(--primary-color);
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: bold;
@@ -233,7 +235,7 @@ hr {
 }
 
 .footer-bottom a {
-  color: var(--text-color);
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -247,7 +249,7 @@ hr {
 }
 
 .footer-social a {
-  color: var(--text-color);
+  color: var(--secondy-color);
   text-decoration: none;
   margin-left: 10px;
   font-size: 1.2rem;
@@ -338,6 +340,17 @@ hr {
 
   .footer-social {
     margin-top: 10px;
+  }
+
+  .footer-social i {
+    margin-left: 0;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    align-self: center;
+    align-items: center;
   }
 
 }
