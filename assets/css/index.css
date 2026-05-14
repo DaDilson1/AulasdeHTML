@@ -338,31 +338,6 @@ main {
     color: var(--quaternary-color);
 }
 
-#social-media a {
-    flex-direction: column;
-    color: var(--primary-color);
-    font-size: 28px;
-    position: relative;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    right: 10px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-#social-media a:hover {
-    color: var(--quaternary-color);
-}
-
-#social-media {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .audio {
     display: flex;
     justify-content: center;
