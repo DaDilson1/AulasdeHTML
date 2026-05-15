@@ -56,14 +56,14 @@ main {
     box-shadow: var(--box-shadow);
 }
 
-.container {
+.container-index {
     width: 75%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--background-container);
+    background-color: var(--light);
     padding: 20px;
     border-radius: var(--border-radius);
     max-width: 100%;
@@ -71,232 +71,126 @@ main {
     overflow-x: auto;
 }
 
-
-#html {
-    width: 75%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.welcome {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
     margin-bottom: 40px;
     padding: 20px;
-    background-color: var(--box-shadow);
+    background-color: var(--quaternary-color);
     border-radius: var(--border-radius);
-    text-align: center;
-}
-
-#html p {
-    text-align: center !important;
-    font-size: 15px;
-    line-height: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-#html img {
-    margin-bottom: 20px;
-    width: 150px;
-    height: auto;
-    border-radius: var(--border-radius);
-    border: 2px solid var(--terceary-color);
     box-shadow: var(--box-shadow);
-    transition: transform 0.3s ease;
 }
 
-#html img:hover {
-    transform: scale(1.1);
-}
-
-#html a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-#html a:hover {
-    color: var(--quaternary-color);
-}
-
-#html h1 {
+.welcome h1 {
     color: var(--primary-color);
     font-size: 36px;
     margin-bottom: 10px;
-    text-align: center;
     text-shadow: var(--text-shadow);
 }
 
-#html h2 {
-    color: var(--secondy-color);
-    text-shadow: var(--text-shadow);
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.more-info button {
-    background-color: var(--transparent-color);
-    color: var(--light);
-    border: 2px solid var(--dark);
-    border-radius: var(--border-radius);
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.more-info button:hover {
-    background-color: var(--quaternary-color);
-    transform: scale(1.1);
-}
-
-.more-info a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: var(--primary-color);
+.welcome p {
+    color: var(--dark);
     font-size: 18px;
 }
 
+.welcome img {
+    width: 950px;
+    height: 540px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--terceary-color);
+    box-shadow: var(--box-shadow);
+}
 
-.more-info i {
+.welcome-text i{
     color: var(--primary-color);
-    font-size: 24px;
+    font-size: 36px;
     margin-left: 10px;
     transition: color 0.3s ease;
 }
 
-.more-info i:hover {
+.welcome-text i:hover {
     color: var(--secondy-color);
+    rotate: 30deg;
 }
 
-#css {
-    width: 75%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: var(--box-shadow);
-    border-radius: var(--border-radius);
-    text-align: center;
-}
-
-#css p {
-    text-align: center !important;
-    font-size: 15px;
-    line-height: 20px;
-    margin-bottom: 20px;
+.conteiner{
     width: 100%;
-}
-
-#css img {
-    margin-bottom: 20px;
-    width: 150px;
-    height: auto;
-    border-radius: var(--border-radius);
-    border: 2px solid var(--terceary-color);
-    box-shadow: var(--box-shadow);
-    transition: transform 0.3s ease;
-}
-
-#css img:hover {
-    transform: scale(1.1);
-}
-
-#css a {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
+    flex-direction: row;
+    background-color: var(--background-container);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    max-width: 100%;
+    box-shadow: var(--box-shadow);
+    overflow-x: auto;
+    margin-bottom: 20px;
 }
 
-#css a:hover {
-    color: var(--quaternary-color);
+.about{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 }
 
-#css h1 {
+.about h2 {
     color: var(--primary-color);
     font-size: 36px;
     margin-bottom: 10px;
-    text-align: center;
     text-shadow: var(--text-shadow);
 }
 
-#css h2 {
-    color: var(--secondy-color);
-    text-shadow: var(--text-shadow);
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
+.about p {
+    color: var(--dark);
+    font-size: 18px;
 }
 
-#js {
-    width: 75%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: var(--box-shadow);
-    border-radius: var(--border-radius);
-    text-align: center;
-}
-
-#js p {
-    font-size: 15px;
-    line-height: 20px;
+.about img {
+    height: 260px;
+    object-fit: cover;
     margin-bottom: 20px;
-    width: 100%;
-}
-
-#js img {
-    margin-bottom: 20px;
-    width: 150px;
-    height: auto;
+    margin-top: 20px;
     border-radius: var(--border-radius);
     border: 2px solid var(--terceary-color);
     box-shadow: var(--box-shadow);
-    transition: transform 0.3s ease;
 }
 
-#js img:hover {
-    transform: scale(1.1);
+
+.more-info button {
+    background-color: var(--secondy-color);
+    color: var(--light);
+    border-radius: var(--border-radius);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#js a {
-    display: flex;
-    justify-content: center;
+.more-info button:hover {
+    background-color: var(--quaternary-color);
+}
+
+
+.passos {
+    display: inline-block;
+    flex-direction: row;
     align-items: center;
-    text-decoration: none;
-}
-
-#js a:hover {
-    color: var(--quaternary-color);
-}
-
-#js h1 {
-    color: var(--primary-color);
-    font-size: 36px;
-    margin-bottom: 10px;
+    justify-content: center;
     text-align: center;
-    text-shadow: var(--text-shadow);
-}
-
-#js h2 {
-    color: var(--secondy-color);
-    text-shadow: var(--text-shadow);
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#passos {
-    text-align: center !important;
-    width: 75%;
-    height: 100%;
+    position: relative;
+    width: 100%;
+    height: auto;
     margin-top: 20px;
     margin-bottom: 40px;
     padding: 20px;
@@ -305,13 +199,13 @@ main {
     box-shadow: var(--box-shadow);
 }
 
-#passos h2 {
+.passos h2 {
     color: var(--primary-color);
     font-size: 28px;
     margin-bottom: 20px;
 }
 
-#passos li {
+.passos li {
     display: inline-block;
     text-align: left;
     color: var(--text-color);
@@ -319,11 +213,11 @@ main {
     margin-bottom: 5px;
 }
 
-#passos li:hover {
+.passos li:hover {
     color: var(--quaternary-color);
 }
 
-#passos a {
+.passos a {
     text-align: center;
     text-align: left;
     color: var(--text-color);
@@ -334,7 +228,7 @@ main {
     transition: color 0.3s ease;
 }
 
-#passos a:hover {
+.passos a:hover {
     color: var(--quaternary-color);
 }
 
@@ -363,24 +257,29 @@ main {
 }
 
 @media (max-width: 768px) {
+    .welcome {
+        width: 100%;
+    }
+
+    .welcome h1 {
+        font-size: 24px;
+    }
+
+    .welcome p {
+        font-size: 14px;
+    }
+
+    .welcome img {
+        width: 260px;
+        height: auto;
+    }
+
+    .welcome-text i {
+        font-size: 24px;
+    }
+
     .container {
         width: 100%;
-    }
-
-    #html {
-        width: 100%;
-    }
-
-    #html p {
-        font-size: 14px;
-    }
-
-    #css {
-        width: 100%;
-    }
-
-    #css p {
-        font-size: 14px;
     }
 
     .more-info button {
@@ -392,24 +291,24 @@ main {
         font-size: 16px;
     }
 
-    #passos {
+    .passos {
         width: 100%;
     }
 
-    #passos h2 {
+    .passos h2 {
         text-align: center;
     }
 
-    #passos li {
+    .passos li {
         display: block;
         text-align: center;
     }
 
-    #passos a {
+    .passos a {
         text-align: center;
     }
 
-    #social-media {
+    .social-media {
         justify-content: center;
     }
 
