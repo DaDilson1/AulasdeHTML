@@ -12,6 +12,7 @@
     --background-container: #F5F5F5;
     --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    --box-shadow2:0px 4px 12px rgb(255, 221, 0);
     --linear-gradient: linear-gradient(45deg, #000080, #005227, #831D1C);
 
 }
@@ -63,7 +64,7 @@ main {
     border-radius: var(--border-radius);
     max-width: 100%;
     box-shadow: var(--box-shadow);
-    
+
     overflow-x: auto;
 }
 
@@ -91,19 +92,23 @@ main {
 }
 
 .welcome img {
-    width: 950px;
-    height: 540px;
+    width: 100%;
+    height: aur«to;
     object-fit: cover;
     margin-bottom: 20px;
     margin-top: 20px;
     border-radius: var(--border-radius);
     border: 2px solid var(--terceary-color);
-    box-shadow: var(--box-shadow);
     transition: transform 0.3s ease;
 }
 
 .welcome img:hover {
-    transform: scale(1.1);
+    transition-duration: 2.5s;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+    transform: scale(1.01);
+    /*transform: scale(1.1) rotate(360deg);
+    transition-timing-function: ease-in-out;*/
 }
 
 .welcome-text i {
@@ -118,36 +123,40 @@ main {
     rotate: 30deg;
 }
 
-.conteiner {
-    width: auto;
-    height: 100%;
+.container {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 75%;
+    height: 100%;
+    background-color: var(--light);
     padding: 20px;
     border-radius: var(--border-radius);
     max-width: 100%;
-    min-width: 10%;
+    box-shadow: var(--box-shadow);
     overflow-x: auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .about {
-    margin: 20px 20px 20px 20px;
     margin-top: 20px;
     justify-content: space-between;
     width: 100%;
-    height: 100%;
-    display: flex;
-    height: 800px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 40px;
-    padding: 20px;
     background-color: var(--light);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    margin-bottom: 40px;
+}
+
+.about:hover {
+    background-color: var(--background-container);
+    transition: background-color 0.9s ease;
+    box-shadow: var(--box-shadow2);
 }
 
 .about h2 {
@@ -155,12 +164,16 @@ main {
     font-size: 30px;
     margin-bottom: 10px;
     text-shadow: var(--text-shadow);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .about p {
     color: var(--dark);
     font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .about img {
@@ -188,6 +201,7 @@ main {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-bottom: 30px;
 }
 
 .more-info button:hover {
@@ -204,12 +218,18 @@ main {
     position: relative;
     width: 100%;
     height: auto;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 20px;
     padding: 20px;
     background-color: var(--background-container);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+}
+
+.passos:hover {
+    background-color: var(--background-container);
+    transition: background-color 0.9s ease;
+    box-shadow: var(--box-shadow2);
 }
 
 .passos h2 {
@@ -228,6 +248,8 @@ main {
 
 .passos li:hover {
     color: var(--quaternary-color);
+    transition: color 0.3s ease;
+    transform: scale(1.1);
 }
 
 .passos a {
@@ -309,6 +331,8 @@ main {
 
     .about p {
         font-size: 14px;
+        margin-left: 0.5px;
+        margin-right: 0.5px;
     }
 
     .about img {

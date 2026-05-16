@@ -13,6 +13,10 @@
   --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   --linear-gradient: linear-gradient(45deg, #000080, #005227, #831D1C);
   --border-radius: 20px;
+  --border-radius-circle: 50%;
+  --border-radius-square: 20px;
+  --box-shadow2: 0 1px 6px rgb(255, 208, 0);
+  --box-shadow3: 0 1px 6px rgb(133, 3, 3);
 }
 
 * {
@@ -55,30 +59,32 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow2);
 }
 
 .topnav img {
   height: 120px;
   width: 120px;
-  border-radius: var(--border-radius);
-  border: 2px solid var(--terceary-color);
-  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-circle);
+  border: 2px solid var(--secondy-color);
   margin-top: 5px;
   transition: transform 0.3s ease;
 }
 
 .topnav img:hover {
   transform: scale(1.2);
+  transform: scale(1.1) rotate(360deg);
+  transition-timing-function: ease-in-out;
 }
 
 
-#myTopnav {
+.myTopnav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.topnav #myLinks {
+.myLinks {
   display: flex;
 }
 
@@ -101,12 +107,11 @@ body {
 }
 
 .topnav a:hover {
-  background-color: var(--quaternary-color);
   border-radius: var(--border-radius);
-  color: var(--light);
+  color: var(--quaternary-color);
 }
 
-.topnav #hamburger {
+.hamburger {
   display: none;
 }
 
@@ -261,34 +266,34 @@ hr {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  #myTopnav {
+  .myTopnav {
     display: none;
   }
 
-  .topnav #hamburger {
+  .hamburger {
     display: block;
     transition: 0.3s ease;
     transform: rotate(45deg)
   }
 
-  .topnav #hamburger:hover {
+  .hamburger:hover {
     transform: scale(1.1);
     transform: rotate(45deg);
   }
 
-  .topnav #hamburger a {
+  .hamburger a {
     transform: rotate(-45deg);
   }
 
-  .topnav #hamburger a:hover {
+  .hamburger a:hover {
     transform: rotate(45deg);
   }
 
-  .topnav #myLinks {
+  .myLinks {
     display: none;
   }
 
-  .topnav #myLinks .active {
+  .myLinks .active {
     display: inline-block;
     justify-content: space-between;
     align-items: center;
@@ -313,7 +318,8 @@ hr {
     align-items: flex-start;
   }
 
-  .footer-section, .footer-newsletter {
+  .footer-section,
+  .footer-newsletter {
     flex: 1 100%;
     min-width: 100%;
   }
