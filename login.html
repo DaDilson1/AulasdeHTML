@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <section class="card">
+    <main class="auth-page">
+        <div class="auth-container">
+            <section class="auth-card">
                 <h2>Login</h2>
-                <form id="loginForm" novalidade>
+                <form id="loginForm" novalidate>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="sousadady@gmail.com" required />
+                        <input type="email" id="email" name="email" placeholder="Ex: teunome@gmail.com" required />
                         <div class="error-message" id="emailError">Por favor, insira um email válido.</div>
                     </div>
                     <div class="form-group">
@@ -28,16 +28,14 @@
                         <div class="error-message" id="passwordError">A sua senha deve ter pelo menos 6 caracteres.
                         </div>
                     </div>
-                    <div class="form-group">
-                        <a href="cadastro.html">Criar conta</a>
-                    </div>
-                    <div class="form-group">
+                    <button type="submit">Entrar</button>
+                    <div class="form-links">
+                        <a href="cadastro.html">Criar Conta</a>
                         <a href="index.html"><i class="fa fa-home"></i></a>
                     </div>
-                    <button type="submit">Entrar</button>
                 </form>
             </section>
-            <section class="form-info">
+            <section class="auth-info">
                 <h2>Bem-vindo de volta!</h2>
                 <p>Faça login para acessar o conteúdo exclusivo sobre linguagens web e continue sua jornada de
                     aprendizado.
@@ -45,8 +43,8 @@
                 <img src="assets/img/logo.png" alt="logo" />
             </section>
         </div>
-        <script src="assets/js/auth.js"></script>
     </main>
+    <script src="assets/js/auth.js"></script>
 </body>
 
 </html>
