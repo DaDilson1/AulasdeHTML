@@ -1,35 +1,23 @@
-const form=
-document.getElementById('loginForm');
-    const emailnput=
-    document.getElementById('email');
-    const passwordinput=
-    document.getElementById('password');
-    const  emailError=
-    document.getElementById('emailError');
-    const passwordError=
-    document.getElementById('passwordError');
+const form = document.getElementById('loginForm');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
 
-    form.addEventListener('submit',
-        function(event){
-        event.preventDefault();
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const email = emailInput.value;
+    const password = passwordInput.value;
+    // Faca alguma coisa com os dados do formulario
+});
 
-        let valid = true;
+const form = document.getElementById('cadastroForm');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
+const confirmPasswordInput = document.getElementById('confirm-password');
 
-        //validação do email
-        if(!emailInput.validity.vadio){
-            emailError.style.display='block';
-            valid=false;
-        }else{
-            emailError.style.display='none';
-        }
-
-        //validação da senha
-        if(passwordInput.validity.valid){
-            passwordError.style.display='none';
-        }
-        
-        if(!valid){
-            alert('login efetuado com sucesso!');
-            form.reset();
-        }
-        });
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const email = emailInput.value;
+    const password = passwordInput.value;
+    const confirmPassword = confirmPasswordInput.value;
+    // Faca alguma coisa com os dados do formulario
+});

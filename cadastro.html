@@ -11,30 +11,28 @@
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <section class="card">
-                <h2>Cadastrar</h2>
-                <form id="loginForm" novalidade>
+    <main class="auth-page">
+        <div class="auth-container">
+            <section class="auth-card">
+                <h2>Criar Conta</h2>
+                <form id="loginForm" novalidate>
                     <div class="form-group">
-                        <label for="name">Nome Completo:</label>
-                        <input type="text" id="name" name="name" placeholder="Ex: jose da silva " required />
-                        <div class="error-message" id="nameError">Por favor, insira um nome válido.</div>
-                    </div>
-                    <div class="form-group">
-                        <label for="gender">Sexo:</label>
-                        <select id="gender" name="gender" required>
-                            <option value="">Selecione</option>
-                            <option value="Masculino">Masculino</option>
-                            <option value="Feminino">Feminino</option>
-                            <option value="Prefiro não responder">Prefiro não responder</option>
-                        </select>
-                        <div class="error-message" id="genderError">Por favor, selecione um sexo.</div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Ex: Teunome" required />
+                        <div class="error-message" id="nomeError">Por favor, insira um nome.</div>
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" placeholder="Ex: teunome@gmail.com" required />
                         <div class="error-message" id="emailError">Por favor, insira um email válido.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="sexo">Sexo:</label>
+                        <select id="sexo" name="sexo">
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Prefiro não informar</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="password">Senha:</label>
@@ -44,15 +42,20 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <a href="login.html">Voltar ao login</a>
-                    </div>
-                    <div class="form-group">
-                        <a href="index.html"><i class="fa fa-home"></i></a>
+                        <label for="confirm-password">Senha:</label>
+                        <input type="password" id="confirm-password" name="confirm-password"
+                            placeholder="Confirme a sua senha" required />
+                        <div class="error-message" id="confirmPasswordError">As senhas devem ser iguais.
+                        </div>
                     </div>
                     <button type="submit">Entrar</button>
+                    <div class="form-links">
+                        <a href="login.html">Voltar ao Login</a>
+                        <a href="index.html"><i class="fa fa-home"></i></a>
+                    </div>
                 </form>
             </section>
-            <section class="form-info">
+            <section class="auth-info">
                 <h2>Bem-vindo de volta!</h2>
                 <p>Faça login para acessar o conteúdo exclusivo sobre linguagens web e continue sua jornada de
                     aprendizado.
@@ -60,8 +63,8 @@
                 <img src="assets/img/logo.png" alt="logo" />
             </section>
         </div>
-        <script src="assets/js/auth.js"></script>
     </main>
+    <script src="assets/js/auth.js"></script>
 </body>
 
 </html>
