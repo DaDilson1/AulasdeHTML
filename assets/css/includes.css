@@ -19,6 +19,17 @@
   --box-shadow3: 0 1px 6px rgb(133, 3, 3);
 }
 
+body.dark-theme {
+    --background-color: #1e1e1e;
+    --text-color: #ffffff;
+    --dark: #ffffff;
+    --light: #121212;
+    --primary-color: #000080;
+    --secondy-color: #005227;
+    --terceary-color: #831D1C;
+    --quaternary-color: #ffd700;
+}
+
 * {
   margin: 0;
   padding: 5px;
@@ -85,7 +96,7 @@ body {
 }
 
 .myLinks {
-  display: flex;
+  display: none;
 }
 
 .topnav a {
@@ -109,6 +120,21 @@ body {
 .topnav a:hover {
   border-radius: var(--border-radius);
   color: var(--quaternary-color);
+}
+
+#theme-toggle {
+  background-color: var(--secondy-color);
+  color: var(--light);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 30px;
+}
+
+#theme-toggle:hover {
+  background-color: var(--quaternary-color);
 }
 
 .hamburger {

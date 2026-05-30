@@ -1,23 +1,36 @@
-const form = document.getElementById('loginForm');
-const emailInput = document.getElementById('email');
-const passwordInput = document.getElementById('password');
+// LÓGICA DO LOGIN
+const loginForm = document.getElementById('loginForm');
 
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const email = emailInput.value;
-    const password = passwordInput.value;
-    // Faca alguma coisa com os dados do formulario
-});
+if (loginForm) {
+    // Estas variáveis só existem aqui dentro!
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
 
-const form = document.getElementById('cadastroForm');
-const emailInput = document.getElementById('email');
-const passwordInput = document.getElementById('password');
-const confirmPasswordInput = document.getElementById('confirm-password');
+    loginForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = emailInput.value;
+        const password = passwordInput.value;
+        console.log('Login submetido!');
+        // Faca alguma coisa com os dados do formulario
+    });
+}
 
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const email = emailInput.value;
-    const password = passwordInput.value;
-    const confirmPassword = confirmPasswordInput.value;
-    // Faca alguma coisa com os dados do formulario
-});
+// LÓGICA DO CADASTRO (Registo)
+// Lembra-te de mudar o ID no HTML para 'registerForm' como combinámos!
+const registerForm = document.getElementById('registerForm');
+
+if (registerForm) {
+    // Como estamos noutro bloco, podemos reutilizar os nomes sem dar erro!
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
+    const confirmPasswordInput = document.getElementById('confirm-password');
+
+    registerForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = emailInput.value;
+        const password = passwordInput.value;
+        const confirmPassword = confirmPasswordInput.value;
+        console.log('Cadastro submetido!');
+        // Faca alguma coisa com os dados do formulario
+    });
+}

@@ -17,6 +17,17 @@
 
 }
 
+body.dark-theme {
+    --background-color: #1e1e1e;
+    --text-color: #ffffff;
+    --dark: #ffffff;
+    --light: #121212;
+    --primary-color: #005227;
+    --secondy-color: #000080;
+    --terceary-color: #831D1C;
+    --quaternary-color: #ffd700;
+}
+
 * {
     margin: 0;
     padding: 5px;
@@ -30,9 +41,11 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    color: var(--text-color);
     margin: 0;
     padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--light);
+    color: var(--text-color);
 }
 
 main {

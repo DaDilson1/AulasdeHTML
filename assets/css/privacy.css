@@ -132,7 +132,7 @@ main {
     transform: scale(1.2);
 }
 
-#privacy-text {
+.privacy-text {
     margin-top: 30px;
     width: 100%;
     height: 300x;
@@ -148,13 +148,13 @@ main {
     margin-bottom: 20px;
 }
 
-#privacy-text h2 {
+.privacy-text h2 {
     font-size: 1.2rem;
     color: var(--secondy-color);
     margin-bottom: 10px;
 }
 
-#privacy-text p {
+.privacy-text p {
     font-size: 0.9rem;
     color: var(--dark);
     margin-bottom: 20px;

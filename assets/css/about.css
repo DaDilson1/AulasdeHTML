@@ -1,41 +1,3 @@
-:root {
-    --primary-color: #000080;
-    --secondy-color: #005227;
-    --terceary-color: #831D1C;
-    --quaternary-color: #ffd700;
-    --transparent-color: rgba(255, 255, 255, 0);
-    --blur-color: rgba(0, 0, 0, 0.5);
-    --text-color: #000000;
-    --light: #ffffff;
-    --dark: #000000;
-    --background-container: #F5F5F5;
-    --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    --linear-gradient: linear-gradient(45deg, #000080, #005227, #831D1C);
-    --border-radius: 20px;
-    --border-radius-circle: 50%;
-    --border-radius-square: 20px;
-}
-
-* {
-    margin: 0;
-    padding: 5px;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 10px;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: var(--text-color);
-    margin: 0;
-    padding: 20px;
-}
-
 @import url('https://googleapis.com');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
@@ -56,6 +18,7 @@ body {
     --linear-gradient: linear-gradient(45deg, #000080, #005227, #831D1C);
 
 }
+
 
 * {
     margin: 0;
